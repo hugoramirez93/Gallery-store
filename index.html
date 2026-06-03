@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMINA – Fine Art Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">LUMINA</a>
+      <div class="nav-links">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Where Light<br>Meets Canvas</h1>
+      <p class="hero-subtitle">Discover original paintings that transform spaces into sanctuaries. Each piece is a conversation between color and emotion.</p>
+      <a href="#gallery" class="btn btn-primary">Explore Collection</a>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Collection</span>
+        <h2 class="section-title">Featured Works</h2>
+        <p class="section-desc">Curated originals available for acquisition</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <div class="loading">Loading collection...</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-dark">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <span>✦</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">The Artist's Vision</h2>
+          <p>Every stroke tells a story. My work explores the interplay of light, texture, and emotion—creating pieces that resonate with the spaces they inhabit.</p>
+          <p>With over a decade of dedicated practice, I invite you to bring a piece of this vision into your home or collection.</p>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Inquire About a Piece</h2>
+        <p class="section-desc">Have questions about a painting or interested in a commission?</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>LUMINA</h3>
+          <p>Fine art for discerning spaces.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">info@lumina.art</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumina Gallery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">Your cart is empty</div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
