@@ -52,14 +52,14 @@ function seed() {
   const productCount = count.length > 0 ? count[0].values[0][0] : 0;
   if (productCount === 0) {
     const seeds = [
-      ['Golden Hour', 'A breathtaking oil painting capturing the warm glow of sunset over a tranquil meadow.', 1200, 'golden-hour.jpg', 1],
-      ['Ocean Serenity', 'Deep blues and turquoise waves crashing against ancient rocks in this acrylic masterpiece.', 950, 'ocean-serenity.jpg', 1],
-      ['Urban Dreams', 'A contemporary abstract interpretation of city lights reflecting on rain-soaked streets.', 1500, 'urban-dreams.jpg', 1],
-      ['Whispers of Spring', 'Delicate watercolor florals dancing in a gentle breeze, evoking renewal and hope.', 780, 'whispers-spring.jpg', 1],
-      ['Midnight Sonata', 'An ethereal nocturne painted in deep indigos and silver moonlight on canvas.', 1350, 'midnight-sonata.jpg', 1],
-      ['Ethereal Garden', 'Layered botanical abstractions that blur the line between reality and imagination.', 1100, 'ethereal-garden.jpg', 1],
-      ['Desert Mirage', 'Warm terracotta and gold tones telling a story of endless dunes at dawn.', 890, 'desert-mirage.jpg', 1],
-      ['Celestial Journey', 'A cosmic-inspired mixed media piece exploring the beauty of nebulae and stars.', 1650, 'celestial-journey.jpg', 1],
+      ['Golden Hour', 'A breathtaking oil painting capturing the warm glow of sunset over a tranquil meadow.', 120000, 'golden-hour.svg', 1],
+      ['Ocean Serenity', 'Deep blues and turquoise waves crashing against ancient rocks in this acrylic masterpiece.', 95000, 'ocean-serenity.svg', 1],
+      ['Urban Dreams', 'A contemporary abstract interpretation of city lights reflecting on rain-soaked streets.', 150000, 'urban-dreams.svg', 1],
+      ['Whispers of Spring', 'Delicate watercolor florals dancing in a gentle breeze, evoking renewal and hope.', 78000, 'whispers-spring.svg', 1],
+      ['Midnight Sonata', 'An ethereal nocturne painted in deep indigos and silver moonlight on canvas.', 135000, 'midnight-sonata.svg', 1],
+      ['Ethereal Garden', 'Layered botanical abstractions that blur the line between reality and imagination.', 110000, 'ethereal-garden.svg', 1],
+      ['Desert Mirage', 'Warm terracotta and gold tones telling a story of endless dunes at dawn.', 89000, 'desert-mirage.svg', 1],
+      ['Celestial Journey', 'A cosmic-inspired mixed media piece exploring the beauty of nebulae and stars.', 165000, 'celestial-journey.svg', 1],
     ];
     for (const s of seeds) {
       db.run('INSERT INTO products (name, description, price, image, available) VALUES (?, ?, ?, ?, ?)', s);
