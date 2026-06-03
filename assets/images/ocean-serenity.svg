@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5276;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#1a6e7a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d3b4f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M0 550 Q100 500 200 530 Q300 560 400 520 Q500 480 600 510 Q700 540 800 500 L800 650 L0 650Z" fill="#2d8a9e" opacity="0.5"/>
+  <path d="M0 580 Q150 620 250 590 Q350 560 450 600 Q550 640 650 580 Q750 520 800 560 L800 700 L0 700Z" fill="#3ba0b5" opacity="0.3"/>
+  <path d="M0 450 Q100 410 200 440 Q300 470 400 430 Q500 390 600 420 Q700 450 800 410 L800 450 L0 450Z" fill="#5bc0d0" opacity="0.15"/>
+  <ellipse cx="200" cy="150" rx="60" ry="40" fill="#ffd700" opacity="0.1"/>
+  <circle cx="250" cy="100" r="30" fill="#fff" opacity="0.08"/>
+  <circle cx="350" cy="80" r="20" fill="#fff" opacity="0.06"/>
+  <text x="400" y="340" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="white" opacity="0.9" font-weight="300" letter-spacing="3">OCEAN SERENITY</text>
+  <text x="400" y="385" text-anchor="middle" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.4)" letter-spacing="6">ACRYLIC ON CANVAS</text>
+</svg>

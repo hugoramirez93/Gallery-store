@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="60%">
+      <stop offset="0%" style="stop-color:#e07040;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#d4884a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#c89860;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c89860;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a07850;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect x="0" y="600" width="800" height="400" fill="url(#sand)"/>
+  <circle cx="300" cy="200" r="120" fill="#ffd700" opacity="0.08"/>
+  <circle cx="300" cy="200" r="80" fill="#fff4b0" opacity="0.12"/>
+  <circle cx="300" cy="200" r="90" fill="#ffe066" opacity="0.06"/>
+  <path d="M0 600 Q100 570 200 590 Q300 610 400 580 Q500 550 600 585 Q700 620 800 590 L800 680 L0 680Z" fill="#b08858" opacity="0.5"/>
+  <path d="M0 640 Q150 670 250 640 Q350 610 450 650 Q550 690 650 630 Q700 600 800 650 L800 720 L0 720Z" fill="#a07850" opacity="0.4"/>
+  <path d="M0 680 Q200 640 400 670 Q600 700 800 660 L800 1000 L0 1000Z" fill="#907048" opacity="0.3"/>
+  <path d="M0 720 Q300 750 500 720 Q650 690 800 730 L800 1000 L0 1000Z" fill="#806840" opacity="0.2"/>
+  <ellipse cx="100" cy="620" rx="80" ry="10" fill="#d4a878" opacity="0.3"/>
+  <ellipse cx="700" cy="650" rx="60" ry="8" fill="#d4a878" opacity="0.25"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="white" opacity="0.85" font-weight="300" letter-spacing="3">DESERT MIRAGE</text>
+  <text x="400" y="525" text-anchor="middle" font-family="sans-serif" font-size="16" fill="rgba(255,255,255,0.45)" letter-spacing="6">OIL ON CANVAS</text>
+</svg>
